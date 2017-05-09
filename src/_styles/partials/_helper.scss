@@ -1,0 +1,60 @@
+//helper classes
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.visuallyhidden-focusable:active,
+.visuallyhidden-focusable:focus {
+	position: static;
+	width: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	clip: auto;
+}
+
+.text-hide {
+	font: 0/0 a;
+	color: transparent;
+	text-shadow: none;
+	background-color: transparent;
+	border: 0;
+}
+
+//floats
+.pull-right { float: right !important; }
+
+.pull-left { float: left !important; }
+
+// .clearfix {
+// 	&:after {
+// 		content: '';
+// 		display: table;
+// 		clear: both;
+// 	}
+// }
+
+
+//display classes
+.hide { display: none !important; }
+
+.block, .show { display: block !important; }
+
+.inline { display: inline !important; }
+
+.i-block { display: inline-block !important; }
+
+.container {
+	position: relative;
+	margin: 0 auto;
+	max-width: $lg-breakpoint;
+	height: auto;
+}

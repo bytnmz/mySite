@@ -1,0 +1,81 @@
+@media only screen and (min-width: $sm-breakpoint), print {
+
+	[class^="col-"], [class*=" col-"] {
+		float: left;
+	}
+
+	.row-col-12 {
+		@include clearfix;
+		width: 100%;
+
+		.col-sm-1  { width: (100% / 12); }
+		.col-sm-2  { width: (100% / 6); }
+		.col-sm-3  { width: (100% / 4); }
+		.col-sm-4  { width: (100% / 3); }
+		.col-sm-5  { width: (100% / 12 * 5); }
+		.col-sm-6  { width: (100% / 12 * 6); }
+		.col-sm-7  { width: (100% / 12 * 7); }
+		.col-sm-8  { width: (100% / 12 * 8); }
+		.col-sm-9  { width: (100% / 12 * 9); }
+		.col-sm-10 { width: (100% / 12 * 10); }
+		.col-sm-11 { width: (100% / 12 * 11); }
+		.col-sm-12 { width: 100%; }
+	}
+
+	.row-col-15 {
+		@include clearfix;
+		width: 100%;
+
+		.col-sm-1  { width: (100% / 15); }
+		.col-sm-2  { width: (100% / 15 * 2); }
+		.col-sm-3  { width: (100% / 15 * 3); }
+		.col-sm-4  { width: (100% / 15 * 4); }
+		.col-sm-5  { width: (100% / 15 * 5); }
+		.col-sm-6  { width: (100% / 15 * 6); }
+		.col-sm-7  { width: (100% / 15 * 7); }
+		.col-sm-8  { width: (100% / 15 * 8); }
+		.col-sm-9  { width: (100% / 15 * 9); }
+		.col-sm-10 { width: (100% / 15 * 10); }
+		.col-sm-11 { width: (100% / 15 * 11); }
+		.col-sm-12 { width: (100% / 15 * 12); }
+		.col-sm-13 { width: (100% / 15 * 13); }
+		.col-sm-14 { width: (100% / 15 * 14); }
+		.col-sm-15 { width: 100%; }
+	}
+}
+
+@media only screen and (min-width: $md-breakpoint), print {
+
+	.row-col-12 {
+		.col-md-1  { width: (100% / 12); }
+		.col-md-2  { width: (100% / 6); }
+		.col-md-3  { width: (100% / 4); }
+		.col-md-4  { width: (100% / 3); }
+		.col-md-5  { width: (100% / 12 * 5); }
+		.col-md-6  { width: (100% / 12 * 6); }
+		.col-md-7  { width: (100% / 12 * 7); }
+		.col-md-8  { width: (100% / 12 * 8); }
+		.col-md-9  { width: (100% / 12 * 9); }
+		.col-md-10 { width: (100% / 12 * 10); }
+		.col-md-11 { width: (100% / 12 * 11); }
+		.col-md-12 { width: 100%; }
+	}
+
+	.row-col-15 {
+		.col-md-1  { width: (100% / 15); }
+		.col-md-2  { width: (100% / 15 * 2); }
+		.col-md-3  { width: (100% / 15 * 3); }
+		.col-md-4  { width: (100% / 15 * 4); }
+		.col-md-5  { width: (100% / 15 * 5); }
+		.col-md-6  { width: (100% / 15 * 6); }
+		.col-md-7  { width: (100% / 15 * 7); }
+		.col-md-8  { width: (100% / 15 * 8); }
+		.col-md-9  { width: (100% / 15 * 9); }
+		.col-md-10 { width: (100% / 15 * 10); }
+		.col-md-11 { width: (100% / 15 * 11); }
+		.col-md-12 { width: (100% / 15 * 12); }
+		.col-md-13 { width: (100% / 15 * 13); }
+		.col-md-14 { width: (100% / 15 * 14); }
+		.col-md-15 { width: 100%; }
+	}
+}

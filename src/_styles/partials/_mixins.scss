@@ -1,0 +1,119 @@
+//functions
+
+@function calc-em($target, $context: $base-fontsize) {
+    @return $target / $context * 1em;
+}
+
+
+//mixins
+
+@mixin border-radius($radius) {
+       -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+            border-radius: $radius;
+}
+
+@mixin rotate($deg) {
+    -webkit-transform: rotate($deg);
+       -moz-transform: rotate($deg);
+        -ms-transform: rotate($deg);
+         -o-transform: rotate($deg);
+            transform: rotate($deg);
+}
+
+@mixin transform($param) {
+    -webkit-transform: $param;
+       -moz-transform: $param;
+        -ms-transform: $param;
+         -o-transform: $param;
+            transform: $param;
+}
+
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+@mixin center-block($width) {
+    @extend .block;
+    margin-left: auto;
+    margin-right: auto;
+    width: $width;
+}
+
+@mixin circle-image {
+    @extend .block;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+@mixin normalise-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin clearfix {
+    &:before, &:after {
+        content: '';
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin icomoon($glyph) {
+    @extend %icomoon;
+    content: $glyph;
+}
+
+@mixin mobile {
+    @media (max-width: $xs-breakpoint - 1) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: $sm-breakpoint - 1) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (max-width: $md-breakpoint - 1) {
+        @content;
+    }
+}
+
+@mixin lgDesktop {
+    @media (max-width: $lg-breakpoint - 1) {
+        @content;
+    }
+}
+
+@mixin background-cover {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@mixin image-cover {
+    object-fit: cover;
+    object-position: center center;
+    object-repeat: no-repeat;
+}

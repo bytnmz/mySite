@@ -72,7 +72,12 @@
       "images": "_images",
       "styles": "_styles",
       "scripts": "_scripts",
-      "data": "_data"
+      "data": "_data",
+      "api": "_api",
+      "fonts": "_fonts",
+      "styles": "_styles",
+      "icons": "_icons"
+
     },
     "//": "Entry files",
     "entries": {

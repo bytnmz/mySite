@@ -1,8 +1,16 @@
 // Normalize Styles
 @import 'node_modules/normalize.css/normalize';
 
+//import partials
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/fonts';
+@import 'partials/icons';
+@import 'partials/grids';
+@import 'partials/helper';
+
 // Import Modules
-@import '../_modules/link/link';
+
 
 // Box sizing partial styles:
 // Apply a natural box layout model to all elements
@@ -40,4 +48,17 @@
   background: #fff8e2;
   color: #000;
   padding: 0.5em 0;
+}
+
+
+html {
+  font-size: $base-fontsize;
+}
+
+body {
+  @extend html;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  font-family: $primary-font;
 }
